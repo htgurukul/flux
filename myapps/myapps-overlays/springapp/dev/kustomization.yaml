@@ -8,4 +8,8 @@ patches:
  - path: my-dep-patch.yml
    target:
     kind: Deployment
- namespace: dev   
+ - path: my-service-patch.yml
+   target:
+    kind: Service
+
+ 
