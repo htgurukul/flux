@@ -1,0 +1,11 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: springapp-image
+  namespace: flux-system
+spec:
+  image: htyagi/spring
+ #secretRef:
+    #name: ecr-credentials
+  interval: 1m1s
+  # provider: generic
