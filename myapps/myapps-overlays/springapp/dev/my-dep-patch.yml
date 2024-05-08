@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
       - name: spring
-        image: htyagi/spring:1.0
+        image: htyagi/spring:2.0
