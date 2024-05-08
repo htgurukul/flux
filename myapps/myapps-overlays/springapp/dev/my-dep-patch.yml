@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring
+  namespace: dev
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+      - name: spring
+        image: htyagi/spring:1.0
