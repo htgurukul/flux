@@ -4,8 +4,8 @@ resources:
 - ../../../base/springapp
 - image-policy.yml
 - image.yml  
-namespace: dev
 patches:
  - path: my-dep-patch.yml
    target:
     kind: Deployment
+ namespace: dev   
