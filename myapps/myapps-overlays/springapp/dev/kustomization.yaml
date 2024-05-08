@@ -11,5 +11,7 @@ patches:
  - path: my-service-patch.yml
    target:
     kind: Service
-
+ - path: my-namespace-patch.yml
+   target:
+    kind: Namespace
  
