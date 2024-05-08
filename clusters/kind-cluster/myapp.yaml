@@ -7,6 +7,6 @@ spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: flux
+    name: flux-system
   path: ./myapps/myapps-overlays
   prune: true
