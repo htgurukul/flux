@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
       - name: spring
-        image: htyagi/spring:2.0 # {"$imagepolicy": "flux-system:spring-image-policy"}
+        image: htyagi/spring:4.0 # {"$imagepolicy": "flux-system:spring-image-policy"}
