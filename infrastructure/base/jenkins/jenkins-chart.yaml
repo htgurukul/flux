@@ -1,0 +1,22 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: jenkins
+spec:
+  releaseName: jenkins
+  chart:
+    spec:
+      version: "5.1.12"
+      chart: jenkins
+      sourceRef:
+        kind: HelmRepository
+        name: jenkins
+        namespace: flux-system
+  interval: 1m0s
+  reconcileStrategy: Revision
+  install:
+    remediation:
+      retries: 3
+  valuesFrom:
+    - kind: ConfigMap
+      name: jenkins-values
