@@ -13,7 +13,6 @@ spec:
         name: jenkins
         namespace: flux-system
   interval: 1m0s
-  reconcileStrategy: Revision
   install:
     remediation:
       retries: 3
