@@ -1,88 +1,88 @@
 controller:
-    # Used for label app.kubernetes.io/component
-    componentName: jenkins-controller
+    #ENC[AES256_GCM,data:BwqZmryiEdaEd0DCt4Xx0RMGhBqwKrEhj/3JsLo9olooMDvEwDB33o8uCg==,iv:kjf77HYiUYBL7951/x9M9C/DgE/hX8OVmxYp/DS1NBk=,tag:TqZcEDgKgEAMCDcpnla/Cw==,type:comment]
+    componentName: ENC[AES256_GCM,data:/XfWgrbRY/Ad+WIriCkImHjh,iv:R/XUa1d87LqadDpeu7uvB0+tH8xyaDQZ3/ErlOTtLPE=,tag:VPfgY0dLVbA9xusnogYAog==,type:str]
     image:
-        registry: docker.io
-        repository: jenkins/jenkins
-        tag: ENC[AES256_GCM,data:Q5kvkKl0Rw==,iv:JwHyxDloHvyEZJY0Dw3bnVhWZSsRQrfUyf+x/rbvOKo=,tag:WTfFtMgmM1y6kfqRs9LJQw==,type:str]
-        tagLabel: jdk17
-        pullPolicy: Always
+        registry: ENC[AES256_GCM,data:3XnaDlsJIRFb,iv:wJs+DB66gkr39jWc8UTmVeUDJ84uNBsrNyPGXPVn+x0=,tag:8zEKEiOLXHYQV67IRUrLdg==,type:str]
+        repository: ENC[AES256_GCM,data:U1lIZm8TdIZeMAm6Ln6I,iv:Sw+Az9qGKqm7T5pNNEuizHOJbzlifXwXtmMpWd7RPwY=,tag:VGk2/L8u0LODw24cN2sQuw==,type:str]
+        tag: ENC[AES256_GCM,data:qQVl64ieNA==,iv:rWnJgxUVCm9oVVDNAfKqzCgdQY6AJMMJBhFm6t33tJQ=,tag:WZulXbbT4AE/Lr6a663NhA==,type:str]
+        tagLabel: ENC[AES256_GCM,data:GPYtk7U=,iv:haVLBfHeeoqe9Zkn3Ro0OFjuH92dcHl3570KHO1Pj48=,tag:mFiC3QJlvIIkhRsJPPjqyg==,type:str]
+        pullPolicy: ENC[AES256_GCM,data:dr1lpXXv,iv:E+Q0zmKFz4GUiF/E2z7zf81SGDlJQBwXncLCpiOKVgY=,tag:gjapL/suWJyMA9clQIHXTw==,type:str]
         admin:
-            username: ENC[AES256_GCM,data:56W4eHk=,iv:LsAlI9Rg6f7i30CuaKcV/b8QT5ZocZz2BdFgNERCMp4=,tag:zmCJQ8TKLqYokNB1OCe69A==,type:str]
-            password: ENC[AES256_GCM,data:3vDUcFHeY17W5Q==,iv:CnjP21F1TJg0F0S6p2pGKzxzW3bI/y4arWKSp8PYZZk=,tag:RyUgin5hfkP5A85cvJlzFw==,type:str]
-            userKey: jenkins-admin-user
-            passwordKey: jenkins-admin-password
-            createSecret: false
-            # existingSecret: ""
-    jenkinsUriPrefix: ENC[AES256_GCM,data:+titEwvhvU2AVA==,iv:nJBkbufeIzmoCxeMb6YYTkrRDWhluTO9ScxxcitcCKk=,tag:l1JUZ9+Sr+uHLLw3v7zyEg==,type:str]
+            username: ENC[AES256_GCM,data:NwbAh20=,iv:UIdHtRDY9CxByRmgQ2Gy2GACmNYe8kpkfor7J/T60kA=,tag:Kn/qk+OemfiJKF+BoPX0Ng==,type:str]
+            password: ENC[AES256_GCM,data:Tqa34+RpibfI92GKzQ==,iv:YTUZ3cHAR//JV8Cv6PVp/8WtSt1LwNeqso5CiXRdtAE=,tag:K2rTNsB/WE6v33WSid2WaA==,type:str]
+            userKey: ENC[AES256_GCM,data:9Qh5zdjTWyHSMq9xmNJfHrXw,iv:ERjRPNZPL2JPdhmB4I6MQSUsvNxpp4NsbryWFLi+i6o=,tag:nfvXc3nxybP8LZOW38eTaA==,type:str]
+            passwordKey: ENC[AES256_GCM,data:Wulyht8A37Zni/omaSjVxoQvr1Ozgg==,iv:xP4qkC5oK8Zmn7fvVOJY4/wWGBBrZGj8gy3uoXK66XE=,tag:U34KzpxjPphTuw0d+woJMw==,type:str]
+            createSecret: ENC[AES256_GCM,data:cex7ww8=,iv:lj8EOK9JbxDUagl4fjCa3eO3HiWbG7mQFzEVy7Tv0DQ=,tag:uADIINZBCQqm49rI0SUj/g==,type:bool]
+            #ENC[AES256_GCM,data:QhJ/2jt9FvwZiV0Bd3Hc7dkypA==,iv:mCQju5DCyxHraq4D4MpnSHPJtA1Fzd7cMruVunYoJDY=,tag:pWcWxpi2xtEgsfiG7LIzkw==,type:comment]
+    jenkinsUriPrefix: ENC[AES256_GCM,data:/R04wENK7rpvJA==,iv:he9vUrjJnCdQZcx7n2848LIbXJ4VeWX6ZXy3WPz9btc=,tag:m/AVgs2DYeyfqucjKFyXxA==,type:str]
     resources:
         requests:
-            cpu: 710m
-            memory: 768Mi
+            cpu: ENC[AES256_GCM,data:YHzAyg==,iv:ahh/CTo1uSJQtvWKt9FkRTD+E13/PSvhgE8q0XxvDvc=,tag:v7q9RiIJQHOKrsV4rsVleg==,type:str]
+            memory: ENC[AES256_GCM,data:dePqXCU=,iv:uAYtctpJEdrUHMAOExkSqq2aobi0dVwYvVNgI2Po1z0=,tag:7QnGKEHS17+tq0lFYFi93Q==,type:str]
         limits:
-            cpu: 1000m
-            memory: 1096Mi
-    # javaOpts: "-Djava.io.tmpdir=/var/jenkins_tmp"
-    # JCasC:
-    #   defaultConfig: false
-    overwritePlugins: true
+            cpu: ENC[AES256_GCM,data:ZrMGgxo=,iv:s7Aa7S7e1O/0g5Eo4kHv62DHsgwHNBqLjrQF5l6MxVU=,tag:ZBLPZSo1wZ0iVFuRPVRaww==,type:str]
+            memory: ENC[AES256_GCM,data:xoZpE1oJ,iv:B55wlmkgvsHjA3rOiK5xdKxS0mILzEmcujxfpp/koCw=,tag:xpow8UJFWtR8NSxPDeodNw==,type:str]
+    #ENC[AES256_GCM,data:HJl5dRDi1aRuxMisNiWkpom2ChWgO0isMFUF/eR+POJg/T25WCuJGVQczm4R4Q==,iv:NtbpeZ1SG1nKtv7ORKCjEkrFFCK0zNdopJHHO3/su8k=,tag:RZHLUO75IDnsnBf/TUVznw==,type:comment]
+    #ENC[AES256_GCM,data:axwOKtwGKw==,iv:WqNkyWAUu0wwkZH3NoU4IPOl3KeJBPA3wgFjNakhTU0=,tag:5hM9RSCe1kUlgEIDTFrNHg==,type:comment]
+    #ENC[AES256_GCM,data:dOFybyfx7ecJCVFrwZ5Kil3hcxHchWQ=,iv:kMLq+k9pw0Kp4QV3gnZdkQZqe10LhSmZfpfPVnUxIMU=,tag:9aMPj3VLymihUR5bdTLgaA==,type:comment]
+    overwritePlugins: ENC[AES256_GCM,data:pqSsJw==,iv://V/BOgoAaR/O7Nt9q7INpcpVY9LqAlcLDMlsRNE+7g=,tag:O+z29IBIC9gW9B+VjUwbnQ==,type:bool]
     installPlugins:
-        - kubernetes:4203.v1dd44f5b_1cf9
-        - workflow-aggregator:596.v8c21c963d92d
-        - git:5.2.1
+        - ENC[AES256_GCM,data:CbME5ntWJI6N5iZD5LQB7tFyjxIXnqt27tdPtSPD,iv:4qxOHKf5QBuo3jMPzmlj6QplVuEEFlS/7XTUcyf8R48=,tag:X7GDNh0FncKze7vpyZWiKQ==,type:str]
+        - ENC[AES256_GCM,data:aHwh7IQ2iRvnPyOpcLtg14jYVdwl+I31tx8ppIJqalvso9fjQA==,iv:1hcB+AAMY1yTikiZLzHeJneuUYBxzpuuNKmmrsCk7Xw=,tag:wh20qHv3dopB2NEe4fq/PA==,type:str]
+        - ENC[AES256_GCM,data:fRs2KhIjGFQB,iv:HYjK3Yqj/aRHBQemegaB7U2imoN2L2zRQQWK1C2UdaQ=,tag:GywhFs13FIdh6b6GTcbB9w==,type:str]
     additionalPlugins:
-        - saml:4.464.vea_cb_75d7f5e0
-        - junit:1265.v65b_14fa_f12f0
-        - blueocean:1.27.11
-        - aws-credentials:231.v08a_59f17d742
-        - credentials:1337.v60b_d7b_c7b_c9f
-        - matrix-auth:3.2.2
-        - lockable-resources:1246.v28b_e4cc6fa_16
-        - jacoco:3.3.5
-        - sonar:2.17.2
-        - dashboard-view:2.508.va_74654f026d1
-        - oic-auth:4.227.v36610663f760
-        - periodicbackup:2.0
-        - amazon-ecr:1.114.vfd22430621f5
-        - docker-workflow:572.v950f58993843
-        - github-pullrequest:0.7.0
-        - pipeline-utility-steps:2.16.2
-        - pipeline-github-lib:42.v0739460cda_c4
-        - pipeline-aws:1.45
-        - build-monitor-plugin:1.14-860.vd06ef2568b_3f
-        - ssh-agent:346.vda_a_c4f2c8e50
-        - groovy-postbuild:228.vcdb_cf7265066
-        - build-user-vars-plugin:1.9
-        - pipeline-stage-view:2.34
-        - dependency-check-jenkins-plugin:5.5.0
+        - ENC[AES256_GCM,data:373Hl5q5vR+O1hER0XHFFnyrWHeeSocfpN8=,iv:ZrN2WuZOJek+haFI94/LSEok+JGqz0/S95ukpsQb1Qk=,tag:GTje+m405cOswY4FY2omCg==,type:str]
+        - ENC[AES256_GCM,data:e2dxFUmAF+aux6MEcGf/Sj/q6+8RB8SRSXM=,iv:ZicE/84wySHUdHmiNW/BQT+ZhJbVFEv+lKuj6A/joiI=,tag:bNUcCuL1i+/XfesxAnLYDg==,type:str]
+        - ENC[AES256_GCM,data:jfEgIgrPLMefG/pNI1p+RjU=,iv:3pwK0EDBbRKOf2sCFh4jTk3S+An8LIWl6YNtz/rU3VA=,tag:MSnqB8I+viuTEh5YcOexng==,type:str]
+        - ENC[AES256_GCM,data:k0cX2bye0YqSil5SaTxdSmw2hsi4rhUwVyTu1WRZx7T2LA==,iv:fB9wAG9kKjMtyj1AKNuu8lzCIxKXaCBfECypXIihylQ=,tag:sYG9xDHgFwJLO88pn35Y4Q==,type:str]
+        - ENC[AES256_GCM,data:kVcdA3pZqSHTfsJcO7p7LxWY9JjmfYpxngo2X96YtMuQ,iv:VvJxHyxQcAQXS7ecjIt5UCUgkePZg+jG5W6WAXeNIoE=,tag:x+qJtveO/qZgAthuFLSUGw==,type:str]
+        - ENC[AES256_GCM,data:qMJTCpLnIcDkhOQPKeLYWw0=,iv:RN2q12LkYKAhBWtsaCT1dFoMw4qOJKJnp+3L1l3BQnM=,tag:t9aK8/2P6JeCl85LtTOIGw==,type:str]
+        - ENC[AES256_GCM,data:izUYQw81Cng+2136tqCld2vG15A5dK9mc/KtVHodrq7G3ieWk7WQ,iv:sxvjlz4noyIL137dGDBAyizavn5K3D50x+T50Bgj3TY=,tag:BB915NBN3VuXjxDeHAFjkA==,type:str]
+        - ENC[AES256_GCM,data:tdrdHzh27AWL3che,iv:uAvRp4xYf9WK6u0TGMS2ziM+wrVTkUwA3PDfzl8ZOwc=,tag:BTsgYYC7nFP9jtaXGmbsUg==,type:str]
+        - ENC[AES256_GCM,data:AFLZlIUsbcQXmFV3,iv:IKUwUNl71l6g8SARtS9TrnG5I+Wl5tzWgTmRXEWmsaE=,tag:ubf2cqtxczBjwAsKG3ajPw==,type:str]
+        - ENC[AES256_GCM,data:0tR0e15vE718Ophms1VIVj5dlIgAqHPhtUX4oW12rcIdMZQ=,iv:zPG4tLeZqyi+VR5Qf7xTeYDe57y+amaQn4fJK/aQzg8=,tag:HRwZskzFRr+GkA37brDl6A==,type:str]
+        - ENC[AES256_GCM,data:+6ACmw9q87GV9tjXR2QeXGZE0Kz+WUNn1Elt8A==,iv:OHci7f0VAVYSu3ERVSpziOsCmqYEMwGpvHrcLf2XLq8=,tag:naa83qfz26hGg/opPyc0HQ==,type:str]
+        - ENC[AES256_GCM,data:F56lCLLSwOKW5aRFo3w4k8wP,iv:VNMm6jPpQ1UbecluXtuYiHPrHPfTruvx+PBwp/JKh0A=,tag:WUzWGfElaS6ojxBDzJzEDg==,type:str]
+        - ENC[AES256_GCM,data:FFnzC1WzFA9XDpctXDYebo8LjE+shsvSEO6+NWb4,iv:Wu5da8pzNfCaGac6UNAWXyvcvt8hfiqThLKsYculIZg=,tag:G+XKdsSXPQzAD+RPN/g8bg==,type:str]
+        - ENC[AES256_GCM,data:UUnY1ekMRPMAMkyzc2HecPdHKsUSXF+gwWrAqk5EfbqB,iv:joWIp6qVWATXorvdBQo36tSF1hsUf6PS94S4BfENr7E=,tag:pTiAmjejUuwduy4nWjrDaQ==,type:str]
+        - ENC[AES256_GCM,data:Sn4w5LyWaLYQZlMMMTDwUXuKAmygthSS,iv:c/HW9M+x2F1pWbo1sxwEoo79t5GThlRDR8VIyaR+OCk=,tag:2oBkFVtILWy6+bndzIbKMQ==,type:str]
+        - ENC[AES256_GCM,data:1igHps4q84ebO1sK5vUy4LVSDzBeIFIv6GEk2Bs=,iv:sGwfBWlDaDijuZp4aGhiXXPlyS0PK0kMMl1jftmbyf0=,tag:onXOiczDZAtmfDxTSxUIQg==,type:str]
+        - ENC[AES256_GCM,data:8O9Wnd91ju5vXAninCsN3cWg3ZVCH5yc4CXhBLwxJPQGbDBKYw==,iv:f3zG+8zuEL/bICFrxLkloKDErESVA2uk3RLyvBuz//M=,tag:8goV6UVxqa8e5bfjIwJWvg==,type:str]
+        - ENC[AES256_GCM,data:PogfCXOfujg2uiZXSOEybzM=,iv:ShKsXE2Fr3Xps1QyWvLP2LT8ePpNMdN9fh0s6BpvoG8=,tag:tlKip52SrvRp9LmlSvh1KA==,type:str]
+        - ENC[AES256_GCM,data:4y7ptdNdQoQDyudPQKaeRyXU3sMpt0v9KVqWHNAAg+slpMMsgjTE4IQW8DI=,iv:7gtQsrJXMn1hOEsCDfOBSabgfHR065FXH7aRombVvWU=,tag:9FuY4WpXoyvA+1MiawFe9w==,type:str]
+        - ENC[AES256_GCM,data:6nUPQVCKv93C8mLJ9oK/kU9bvZWYOi1qqpYBBic=,iv:D7h+f2ChPHkiit6w0nKO9JpTzQFHjU+pYuobDwrb+1A=,tag:pyC2LwoIFKcTP8f6V7MgBA==,type:str]
+        - ENC[AES256_GCM,data:CJ7v8ts3WEs+W1aOgFRAR5x4NqBbbtdok5TQGmodXYLmYOs=,iv:7uwgo/Q+hShxikaZmS0N3t4of+q3hB3Xjcb2hz6J+lg=,tag:mo45rb8jAruSiUWG5txQsA==,type:str]
+        - ENC[AES256_GCM,data:1SWI69pyI0TP6+EVPbiIqeutQy7Ejf0awWE=,iv:gNYyC/m96pcPvLQ3dHm+J6zKpOtCmSNYujTGxko3ymw=,tag:+Y4CQBAsRDRWfjZV9WgPFQ==,type:str]
+        - ENC[AES256_GCM,data:lh6LZReLOIEJ9t0cywcm0QF1/qg0L0rN,iv:v96pcmrYA1o7cet1xR3j7AC3WjPCLL2w8XCHWJhahbo=,tag:gVo1/pNOrSrK9JGHVCHmnQ==,type:str]
+        - ENC[AES256_GCM,data:ZgRV/Cux1xt2FZryuk/a3jRPOSSEdfnqorpWeEU1CnXU/qTs2g==,iv:TUA/cAnfPq1a39JTOLAcLwF0RzFgwaTuN89B3y5+zBE=,tag:Ss631wjMwXvehbKPzO7whQ==,type:str]
 agent:
-    enabled: true
-jenkinsHome: /var/jenkins_home
-javaOpts: -Djava.io.tmpdir=/var/jenkins_tmp -DJENKINS_HOME=/var/jenkins_home
-usePodSecurityContext: true
-# Note that `runAsUser`, `fsGroup`, and `securityContextCapabilities` are
-# being deprecated and replaced by `podSecurityContextOverride`.
-# Set runAsUser to 1000 to let Jenkins run as non-root user 'jenkins' which exists in 'jenkins/jenkins' docker image.
-# When setting runAsUser to a different value than 0 also set fsGroup to the same value:
-runAsUser: 1000
-fsGroup: 1000
-# containerSecurityContext:
-#   runAsUser: 1000
-#   runAsGroup: 1000
-#   readOnlyRootFilesystem: true
-#   allowPrivilegeEscalation: false
+    enabled: ENC[AES256_GCM,data:Up7CAg==,iv:Mc4E6YriUWUcbj3OmWRz9qff4FcV5VY97DkZ9f20FAs=,tag:1VRlGsNxv3hHzaRk3E3ulA==,type:bool]
+jenkinsHome: ENC[AES256_GCM,data:MCvIpwrY2+XbLhIYDR0p6YA=,iv:557LJK5y9fxxQIMb8D9nbGwlnnbEtcHJbRczXctylzM=,tag:7TPyzb4CfscepbemgVmPkg==,type:str]
+javaOpts: ENC[AES256_GCM,data:t/sSi2hGJz9woZk2r8pnCeQId/NBAPc3fU1rJvxua5ag/ceOGVnciYCjPczAuutKbP4UdU7Ds1DFLrfqhdaiksCd,iv:8tlQqbrcFdTecvZzWnLtoCq2KGhPBtbdOqE/3McyWb0=,tag:bth51/FiOw+pXeWZ+IARRQ==,type:str]
+usePodSecurityContext: ENC[AES256_GCM,data:TAd/Jw==,iv:Ak0P4La6vRL3Woe5aEpgGef+aFl7plkwwffYiSYzbyU=,tag:5FMMFJKHapvE42ZrfIP77Q==,type:bool]
+#ENC[AES256_GCM,data:K1WoMMbdAWWp4k312gywDxFu05aeuIIskLTMxQ+lNh/Rs0XYzafig0Qp36OEGgOcmGx+3zRrh6/wCBxWP1p5k5OmuIbB74m6,iv:xHdNT0xG5f5fX+gcu+ZHaOu4CMRtZRVqOnJJUw1wu5g=,tag:h+UW8K3DM1QOmy2yVJsvhw==,type:comment]
+#ENC[AES256_GCM,data:eLoM7KTYedSQvSjwNP/TWqEUX3Ta9O+J6H+3KmAgD1mr8zaNV8GJBvbB/fk96oBPzt39nvP0RASsDxO+MlVw,iv:hrEtc5KcZYczQkP0ob6krOdFadu2VZJKFuFmFDJd260=,tag:tdxrqH9Tcgf+ApsKFjE31Q==,type:comment]
+#ENC[AES256_GCM,data:Iaj/GOKQ4+srBAYh5lFHB1eZn9+An/7goSLhmeIautyf06tMCWTbU3H6G0btD7ZozPGzK+jKGHAggGyi51Cj7KxsbRlLTDhLWTMPdnQR3NujYa0AKK/FVCOU648LX405QDU6q86KN4h2N66w2fpKYLCMRfo=,iv:hmj7tl0OfuGDTOK9s2Au1bjfbgDDVcVzMLPlHvx9/jw=,tag:IltPkpq1J8Gg0rKbWSV5iw==,type:comment]
+#ENC[AES256_GCM,data:KvMX3DUY151+6TTT8S8LF3QVy/3Rk24Wpl2+u6WDFCV4UIOEC8ajbSVd4X5aeJ/snDUf7dRwpMKd9lgMz6eaGVEY/NUDTIu1sy5qGEhzhcMbNpDvJ0yz,iv:VwKXnQItC1Ium4wCvvg6I8kdCIdV7B1oVGJeZQ8r+VA=,tag:cFd7Mqnt/G4TbKIWvVqcqQ==,type:comment]
+runAsUser: ENC[AES256_GCM,data:5N/EYA==,iv:K0z8r117TjfVLoCWJPDReqD/yDQKGfm08BUVkp3HE1A=,tag:xptQlYifeSc9ypoyVzwWaw==,type:int]
+fsGroup: ENC[AES256_GCM,data:kHp6MQ==,iv:Eq1favO3osx5A3VwkW2TNUFzOHL7hE1wgI37E3KR0+c=,tag:wIjC1gsTfDRn6FWt2OCQoQ==,type:int]
+#ENC[AES256_GCM,data:7Heiq1UYOdxJ3miEurHPVjsAhzE0YFhl9pY=,iv:d/wVVHAicMLWMac0otBRwULzgfvXI143gG4TG0DojB4=,tag:X8+C2PcLqLEv0WplMQ0kew==,type:comment]
+#ENC[AES256_GCM,data:RYnlfBXrdnk8hZ5ArIJ7rlZc,iv:4WdPeKj7F6+reUglPdmV5MMx/3spMQvUj+MiTY4HN/k=,tag:q98mQ7ay2S4oB3xYbT6seQ==,type:comment]
+#ENC[AES256_GCM,data:4v0Ty3PpIZPXJfVC/Yj06I0OLA==,iv:Rdwci58pwaGBwcCLRoTeuVIAp1jhi7ZTVtzd8uZs928=,tag:K+zZyrcNWZqK8UiSgZ4G3w==,type:comment]
+#ENC[AES256_GCM,data:cxcT/i2dsN2d68yZy2nrVuZJCIIs2ZJJKc27+7QB9Q==,iv:Me/PQRAP4mg9s+sFTjfvNPg0UYmiwMsYjUZgJpboVGM=,tag:8gImuwgobyog9Qlwt1I7QQ==,type:comment]
+#ENC[AES256_GCM,data:q7VE5T9G2FnJs/HpCB1bpryco99me1vQWb/cngoIVO6IeA==,iv:a20HbjjNta4EkWN05UXpFYPDyh5aOYcqJWrVJ64cCqE=,tag:CcnjJxSuzMjoTV66D/573g==,type:comment]
 persistence:
-    enabled: true
+    enabled: ENC[AES256_GCM,data:oIHtIA==,iv:4C5qnUCNe/hkZloehZyqDb4VwIyR3KN4zMftDe1sJFY=,tag:Vv/sIt7tzMBhEYrZQmp3Cg==,type:bool]
     existingClaim: null
 nodeSelector:
-    jenkins: enable
-## Install Default RBAC roles and bindings
+    jenkins: ENC[AES256_GCM,data:TKJk6Lbf,iv:K1paTgsBT26wYGEUgTVPFiDXNc02ezIhhTf00wpS+M4=,tag:yjZbeCAE9D1TTDl1Qgt/SQ==,type:str]
+#ENC[AES256_GCM,data:huE2D7vdA09/cfrtCUIxzVI1u/81KdXqVn6GlDsUqBFu8d9WXxZ40aI=,iv:xVIzmPfvXqb3P+EULBi5lp37hKdjzYv6eKn1iw6nXUc=,tag:HHudJLz0C7XHfMTJj0mwgw==,type:comment]
 rbac:
-    create: true
-    readSecrets: false
+    create: ENC[AES256_GCM,data:B3LMDw==,iv:uMXC4S18vdwkzrCy75SDm2zdYtEBhoM7JleJ1WIl08c=,tag:cmAWE0Hu4e1J6xt44mHEfw==,type:bool]
+    readSecrets: ENC[AES256_GCM,data:mWNhKMs=,iv:syQH7sgb2mQGMBUo0APvUMSC4JkFPzU/6ya+fpvlfLQ=,tag:mjqhrluv/3wrbuBaDcHaBw==,type:bool]
 serviceAccount:
-    create: true
-    # The name of the service account is autogenerated by default
+    create: ENC[AES256_GCM,data:xlui4Q==,iv:MyMxjm5k367aOQreDC7u41F3EZpF6OeB+eLVdJvClUY=,tag:ET+JNiBrG/mdVjkJb54lig==,type:bool]
+    #ENC[AES256_GCM,data:hjD4Alf6iQsGyD1pa/gKv50aBS8IS8noSH7zENoHhayx5xz++ORws+gljuKoRpz0oqcDfKcxNzJZ1y/y,iv:sbZrZyOpGVuMFxRYXNyMSuaEU4Hpl5Kc9woQLknGtTw=,tag:atahqR1aemRfTlTvspKr0A==,type:comment]
     name: null
     annotations: {}
     imagePullSecretName: null
@@ -95,14 +95,14 @@ sops:
         - recipient: age1awjh97kdxxhrqru5y5j99tpchv9avpfp9hfwu5jfqrgzp6dnpsqq8599ws
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBRbFR0YllocFNyQkM3dEtB
-            TCt4TnRGVGM2MGMvMXRGYWduaUNyYmRBMzBrCmt1SGR0cVdsanRDRWNlcHIwLzF1
-            Z3FYWHZscTlmM0MvcW1WQTBQQzE4TlUKLS0tIDl0OG1pNTlrcHBHUzUrdE1HQUl6
-            RmpBVUFXT0UwSWFSVDJPT1FBRm5sR0UKdOhmXpNmc2W/YLk4/EOqeQLZtIId+InN
-            cqwK+HFlv2pMkMZ/e6CMqsHrmhoCj8pydQxCz7TtE6lyMOIVCt26gg==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBNbWhtODdTQzViQzNTMEJK
+            eDRsWmtUSHh3ZHU5RGY5SEFoTVdQK011NkFvCldjMWIwTHBoQ0dtL1FzeHhheDZY
+            YktqTzViWWtJak5mRHF0VSsveHdPMDgKLS0tIHdvU29ISUV4cVpLQWptaHFGVUVT
+            aDlLd3FhLzJ5VzlnRGFLL2JPQVFUQUUKYFcPRcp5tjian1u/HOR3n2zwl/RS/Irm
+            RNmGnlizHqwpnECFGgOm+j0wtzbhlas0lJxW/NKjcJz0TAzdXRQVtw==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2024-05-22T12:07:54Z"
-    mac: ENC[AES256_GCM,data:Fu0NWLwTQ9QD44n/mtk6PVv1K0jn5Mp2lqK1sOxhqDhxWneIzUQ81DiA2Ql9wa42DHymx0NlpX1rXxKPKdRnUMKRIiLryUcJHJTjPVrst9W5keY8jTvFZQ0e5AUZecOrLjMhRTMmLKxUlZNC9aBLE6hItiR+7O8lmg51kjK7mKE=,iv:BErFcuofzwoGKGanKzc76KMnQQUYmWa7wFzVlCVIcIk=,tag:u3TXHe6/DGE8L4Y9iPo9hA==,type:str]
+    lastmodified: "2024-05-22T12:13:13Z"
+    mac: ENC[AES256_GCM,data:cWyhGd6qwak86IAIhOMzfa1IB6dtWx0Cscra9E5mTlg0dLn7IaFmkWKwbwrz6Gpt9Quq9GXsPOjWO+9rbtyFJcFuarMV3owiBWdg/uYos58+Kd7kc9Kliio6H3vxGzLagOIgnhUG4Lj/945hBXseN8pfNG49nfBMBxDz5ewsLCk=,iv:L2VpgzgwGsz2/3aMXi6hsX4Z1OO87MpIvm5Zm1OvHpo=,tag:H4yUq9KdfdEJQfKTkM8VCQ==,type:str]
     pgp: []
-    encrypted_regex: ^(username|password|tag|jenkinsUriPrefix)$
+    unencrypted_suffix: _unencrypted
     version: 3.8.1
