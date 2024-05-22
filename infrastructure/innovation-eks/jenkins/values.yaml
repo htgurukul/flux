@@ -17,7 +17,7 @@ controller:
     jenkinsUriPrefix: ENC[AES256_GCM,data:/R04wENK7rpvJA==,iv:he9vUrjJnCdQZcx7n2848LIbXJ4VeWX6ZXy3WPz9btc=,tag:m/AVgs2DYeyfqucjKFyXxA==,type:str]
     resources:
         requests:
-            cpu: ENC[AES256_GCM,data:YHzAyg==,iv:ahh/CTo1uSJQtvWKt9FkRTD+E13/PSvhgE8q0XxvDvc=,tag:v7q9RiIJQHOKrsV4rsVleg==,type:str]
+            cpu: ENC[AES256_GCM,data:ecOSHw==,iv:MB+789IUcp4ua+XFv1nnjwvTvxbCEiYHCFysiEpjSR8=,tag:+f18RN9CWzCdi+TXSkAa0Q==,type:str]
             memory: ENC[AES256_GCM,data:dePqXCU=,iv:uAYtctpJEdrUHMAOExkSqq2aobi0dVwYvVNgI2Po1z0=,tag:7QnGKEHS17+tq0lFYFi93Q==,type:str]
         limits:
             cpu: ENC[AES256_GCM,data:ZrMGgxo=,iv:s7Aa7S7e1O/0g5Eo4kHv62DHsgwHNBqLjrQF5l6MxVU=,tag:ZBLPZSo1wZ0iVFuRPVRaww==,type:str]
@@ -101,8 +101,8 @@ sops:
             aDlLd3FhLzJ5VzlnRGFLL2JPQVFUQUUKYFcPRcp5tjian1u/HOR3n2zwl/RS/Irm
             RNmGnlizHqwpnECFGgOm+j0wtzbhlas0lJxW/NKjcJz0TAzdXRQVtw==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2024-05-22T12:13:13Z"
-    mac: ENC[AES256_GCM,data:cWyhGd6qwak86IAIhOMzfa1IB6dtWx0Cscra9E5mTlg0dLn7IaFmkWKwbwrz6Gpt9Quq9GXsPOjWO+9rbtyFJcFuarMV3owiBWdg/uYos58+Kd7kc9Kliio6H3vxGzLagOIgnhUG4Lj/945hBXseN8pfNG49nfBMBxDz5ewsLCk=,iv:L2VpgzgwGsz2/3aMXi6hsX4Z1OO87MpIvm5Zm1OvHpo=,tag:H4yUq9KdfdEJQfKTkM8VCQ==,type:str]
+    lastmodified: "2024-05-22T12:46:30Z"
+    mac: ENC[AES256_GCM,data:dCR+6oUJfY84NQSfivkaH9N6BpZHtlGJRZzb6mJ601blsBbNsUBCdrCVeoUZhJTvUgNo9SEvbjuH6gCeSJPMNHLtTqYuBkz8Ts7VjC4icqEvlZJEr/+125laHf2GItZ8bPvuTPbX5zY1cpvU+FdhGwyH1mqN2Ac8SPTi5HKYm2o=,iv:XqsYCFV5crcAEHY8xnzipcDC4ToM/B2hklBjCE6mWyM=,tag:oGSDUzeB8sZe7aZ5o6pG2w==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.8.1
