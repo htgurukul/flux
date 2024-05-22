@@ -9,7 +9,7 @@ controller:
         pullPolicy: Always
         admin:
             username: ENC[AES256_GCM,data:56W4eHk=,iv:LsAlI9Rg6f7i30CuaKcV/b8QT5ZocZz2BdFgNERCMp4=,tag:zmCJQ8TKLqYokNB1OCe69A==,type:str]
-            password: ENC[AES256_GCM,data:3eEZZqju084X,iv:CJtjgRxrv1Jn6N+lh0lnE3Dq2ub25BHPZYniO7NqgIw=,tag:haTFdpX29V2HLdi7hBvEaw==,type:str]
+            password: ENC[AES256_GCM,data:3vDUcFHeY17W5Q==,iv:CnjP21F1TJg0F0S6p2pGKzxzW3bI/y4arWKSp8PYZZk=,tag:RyUgin5hfkP5A85cvJlzFw==,type:str]
             userKey: jenkins-admin-user
             passwordKey: jenkins-admin-password
             createSecret: false
@@ -17,7 +17,7 @@ controller:
     jenkinsUriPrefix: ENC[AES256_GCM,data:+titEwvhvU2AVA==,iv:nJBkbufeIzmoCxeMb6YYTkrRDWhluTO9ScxxcitcCKk=,tag:l1JUZ9+Sr+uHLLw3v7zyEg==,type:str]
     resources:
         requests:
-            cpu: 700m
+            cpu: 710m
             memory: 768Mi
         limits:
             cpu: 1000m
@@ -101,8 +101,8 @@ sops:
             RmpBVUFXT0UwSWFSVDJPT1FBRm5sR0UKdOhmXpNmc2W/YLk4/EOqeQLZtIId+InN
             cqwK+HFlv2pMkMZ/e6CMqsHrmhoCj8pydQxCz7TtE6lyMOIVCt26gg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2024-05-22T09:27:06Z"
-    mac: ENC[AES256_GCM,data:0u4JN/qe2fxsxEH4jsw6zK9DpoxCVmUJcCNaXkKWW7JmwjXOOlo4GgIufKJxteo+UbRshNju3q5BT1gHuQQUcvVfQUgLgCFA92n/8smnaDySitf41QoWBxM/VI5Mk9yi8Hbc9UD/whb06E1FH5vDRwWdC1BnMFV5KlOghlRIIs0=,iv:h+lr4n5D8gNp76IrY5S1PVGjhOP69fSQLNm+vdCBHgw=,tag:eAraeNqnUNrD8G1US+/Erw==,type:str]
+    lastmodified: "2024-05-22T12:07:54Z"
+    mac: ENC[AES256_GCM,data:Fu0NWLwTQ9QD44n/mtk6PVv1K0jn5Mp2lqK1sOxhqDhxWneIzUQ81DiA2Ql9wa42DHymx0NlpX1rXxKPKdRnUMKRIiLryUcJHJTjPVrst9W5keY8jTvFZQ0e5AUZecOrLjMhRTMmLKxUlZNC9aBLE6hItiR+7O8lmg51kjK7mKE=,iv:BErFcuofzwoGKGanKzc76KMnQQUYmWa7wFzVlCVIcIk=,tag:u3TXHe6/DGE8L4Y9iPo9hA==,type:str]
     pgp: []
     encrypted_regex: ^(username|password|tag|jenkinsUriPrefix)$
     version: 3.8.1
