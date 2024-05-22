@@ -1,65 +1,65 @@
 controller:
-    # Used for label app.kubernetes.io/component
-    componentName: jenkins-controller
-    image:
-        registry: docker.io
-        repository: jenkins/jenkins
-        tag: ENC[AES256_GCM,data:MmKxRzbOig==,iv:m7Y7e0rcnINmn0m1NpVb5tb69GGjbo0Y3J/iMVX7pw4=,tag:yOg4iLHTrBo66i82nTfvAw==,type:str]
-        tagLabel: jdk17
-        pullPolicy: Always
-        admin:
-            username: ENC[AES256_GCM,data:W+dVAIk=,iv:sevMMqjKp7Ojsmm+OlGvmXMrxrkoPisr/aOoy21HdwE=,tag:f4TIgzpzdLX4EuaDZFsSNA==,type:str]
-            password: ENC[AES256_GCM,data:2AyUBZE/FX7y,iv:YnKQEWkN08kG3ViYqP+rXTMlA4ZT5gdUco1yuVFaHh8=,tag:3KA6Tsvks+PyAqjzMiLEDg==,type:str]
-            userKey: jenkins-admin-user
-            passwordKey: jenkins-admin-password
-            createSecret: false
-            # existingSecret: ""
-    jenkinsUriPrefix: ENC[AES256_GCM,data:9JYorLr8F56dHw==,iv:WwQnTZzehB08HylmbvboOhkjyDeDU+5knaE9YMMM4Zo=,tag:UCI1kC3OAFKCJtvSyBxI8w==,type:str]
-    resources:
-        requests:
-            cpu: 700m
-            memory: 768Mi
-        limits:
-            cpu: 1000m
-            memory: 1096Mi
-    # javaOpts: "-Djava.io.tmpdir=/var/jenkins_tmp"
-    # JCasC:
-    #   defaultConfig: false
-    overwritePlugins: true
-    installPlugins:
-        - kubernetes:4203.v1dd44f5b_1cf9
-        - workflow-aggregator:596.v8c21c963d92d
-        - git:5.2.1
-    additionalPlugins:
-        - saml:4.464.vea_cb_75d7f5e0
-        - junit:1265.v65b_14fa_f12f0
-        - blueocean:1.27.11
-        - aws-credentials:231.v08a_59f17d742
-        - credentials:1337.v60b_d7b_c7b_c9f
-        - matrix-auth:3.2.2
-        - lockable-resources:1246.v28b_e4cc6fa_16
-        - jacoco:3.3.5
-        - sonar:2.17.2
-        - dashboard-view:2.508.va_74654f026d1
-        - oic-auth:4.227.v36610663f760
-        - periodicbackup:2.0
-        - amazon-ecr:1.114.vfd22430621f5
-        - docker-workflow:572.v950f58993843
-        - github-pullrequest:0.7.0
-        - pipeline-utility-steps:2.16.2
-        - pipeline-github-lib:42.v0739460cda_c4
-        - pipeline-aws:1.45
-        - build-monitor-plugin:1.14-860.vd06ef2568b_3f
-        - ssh-agent:346.vda_a_c4f2c8e50
-        - groovy-postbuild:228.vcdb_cf7265066
-        - job-dsl:1.87
-        - build-user-vars-plugin:1.9
-        - pipeline-stage-view:2.34
-        - dependency-check-jenkins-plugin:5.5.0
+  # Used for label app.kubernetes.io/component
+  componentName: "jenkins-controller"
+  image:
+    registry: "docker.io"
+    repository: "jenkins/jenkins"
+    tag: "2.452.1"
+    tagLabel: jdk17
+    pullPolicy: "Always"
+    admin:
+     username: "admin"
+     password: "Admin@420"
+     userKey: jenkins-admin-user
+     passwordKey: jenkins-admin-password
+     createSecret: false
+    # existingSecret: ""
+  jenkinsUriPrefix: "/htjenkins"
+  resources:
+    requests:
+      cpu: "700m"
+      memory: "768Mi"
+    limits:
+      cpu: "1000m"
+      memory: "1096Mi"
+  # javaOpts: "-Djava.io.tmpdir=/var/jenkins_tmp"
+  # JCasC:
+  #   defaultConfig: false
+  overwritePlugins: true
+  installPlugins:
+    - kubernetes:4203.v1dd44f5b_1cf9
+    - workflow-aggregator:596.v8c21c963d92d
+    - git:5.2.1
+  additionalPlugins:
+    - saml:4.464.vea_cb_75d7f5e0
+    - junit:1265.v65b_14fa_f12f0
+    - blueocean:1.27.11
+    - aws-credentials:231.v08a_59f17d742
+    - credentials:1337.v60b_d7b_c7b_c9f
+    - matrix-auth:3.2.2
+    - lockable-resources:1246.v28b_e4cc6fa_16
+    - jacoco:3.3.5
+    - sonar:2.17.2
+    - dashboard-view:2.508.va_74654f026d1
+    - oic-auth:4.227.v36610663f760
+    - periodicbackup:2.0
+    - amazon-ecr:1.114.vfd22430621f5
+    - docker-workflow:572.v950f58993843
+    - github-pullrequest:0.7.0
+    - pipeline-utility-steps:2.16.2
+    - pipeline-github-lib:42.v0739460cda_c4
+    - pipeline-aws:1.45
+    - build-monitor-plugin:1.14-860.vd06ef2568b_3f
+    - ssh-agent:346.vda_a_c4f2c8e50
+    - groovy-postbuild:228.vcdb_cf7265066
+    - build-user-vars-plugin:1.9
+    - pipeline-stage-view:2.34
+    - dependency-check-jenkins-plugin:5.5.0
+
 agent:
-    enabled: true
-jenkinsHome: /var/jenkins_home
-javaOpts: -Djava.io.tmpdir=/var/jenkins_tmp -DJENKINS_HOME=/var/jenkins_home
+  enabled: true
+jenkinsHome: "/var/jenkins_home"
+javaOpts: "-Djava.io.tmpdir=/var/jenkins_tmp -DJENKINS_HOME=/var/jenkins_home"
 usePodSecurityContext: true
 # Note that `runAsUser`, `fsGroup`, and `securityContextCapabilities` are
 # being deprecated and replaced by `podSecurityContextOverride`.
@@ -73,37 +73,21 @@ fsGroup: 1000
 #   readOnlyRootFilesystem: true
 #   allowPrivilegeEscalation: false
 persistence:
-    enabled: true
-    existingClaim: null
+  enabled: true
+  existingClaim:
+
 nodeSelector:
-    jenkins: enable
+  jenkins: enable
+
 ## Install Default RBAC roles and bindings
 rbac:
-    create: true
-    readSecrets: false
+  create: true
+  readSecrets: false
+
 serviceAccount:
-    create: true
-    # The name of the service account is autogenerated by default
-    name: null
-    annotations: {}
-    imagePullSecretName: null
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    age:
-        - recipient: age1awjh97kdxxhrqru5y5j99tpchv9avpfp9hfwu5jfqrgzp6dnpsqq8599ws
-          enc: |
-            -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBKNHdwWE5SeWx2RkR4Y1NU
-            Q2RYVkJsMGQ2MEc3V0hyTDVxdmJjVHJ6azBRCldYdjI1WkgrQ0VwTk10WGZNbzVB
-            aVB5U1REd3dmanRaZXJFMWh6elQzaWMKLS0tIGZQd2k1bUpuam5pMW5FZlBBa2xa
-            RTlkcHFWYjdpUEdtVWZBT3Y4emNHQjQKxu2mml+UYWYvR0pKkx/p1948rOGtW5/w
-            KRm4tQo8a79bb0kklgGJa6T6dTCRah2WHGWY4rfes68gRgEZNYU0Uw==
-            -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2024-05-22T08:44:23Z"
-    mac: ENC[AES256_GCM,data:hCfkT8C9wK0cPWwK96Lk52e1H5zAueLiQeUtPsPml6IbASAuGNrIThkV2g8HBtfv/y0m5S9rHuhA6AXKRF2HM7A8pY+qqp4ti2lWgKEMXpdIBrQjzF1/4uAkWmGJApPfl7SIDvZ5mVFJD7nzb+ixecoaLvUxu0yzFqesTe32rQM=,iv:6SmHRUjl9eXSfE1ysiGHXmkmo8MQCr1P+tfknj7iiJQ=,tag:rVME7sQ3Kq/lcsVEf8SfDg==,type:str]
-    pgp: []
-    encrypted_regex: ^(username|password|tag|jenkinsUriPrefix)$
-    version: 3.8.1
+  create: true
+  # The name of the service account is autogenerated by default
+  name:
+  annotations: {}
+  imagePullSecretName:
+
