@@ -1,17 +1,12 @@
----
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: GitRepository
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
 metadata:
-  labels:
-    kustomize.toolkit.fluxcd.io/name: flux-system
-    kustomize.toolkit.fluxcd.io/namespace: flux-system
-  name: flux-system
+  name: sources
   namespace: flux-system
 spec:
-  interval: 1m0s
-  ref:
-    branch: main
-  secretRef:
+  interval: 10m0s
+  sourceRef:
+    kind: GitRepository
     name: flux-system
-  timeout: 1m0s
-  url: https://github.com/htgurukul/flux.git
+  path: ./sources
+  prune: true
