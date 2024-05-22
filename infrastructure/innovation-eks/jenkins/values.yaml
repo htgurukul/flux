@@ -4,24 +4,24 @@ controller:
     image:
         registry: docker.io
         repository: jenkins/jenkins
-        tag: ENC[AES256_GCM,data:F1b49J+8Wg==,iv:gp9osSVnwRm7L6X15sA/is+LJivPd4DXNaaJQAEfDM0=,tag:80JI2Z+MkcGLuO1++hro5w==,type:str]
+        tag: ENC[AES256_GCM,data:MmKxRzbOig==,iv:m7Y7e0rcnINmn0m1NpVb5tb69GGjbo0Y3J/iMVX7pw4=,tag:yOg4iLHTrBo66i82nTfvAw==,type:str]
         tagLabel: jdk17
         pullPolicy: Always
         admin:
-            username: ENC[AES256_GCM,data:PjF0wP0=,iv:AbFOSqVwYbb9o/FEvzkldn8sY/KkwdyWqR7+ehH8K+o=,tag:5+dPUhKQlnIXAlMgZ0Ec3g==,type:str]
-            password: ENC[AES256_GCM,data:MRItkctFBvmq,iv:M5KFHyphEfrHvs5Lvbrqr+1chg74HY3fER4qhoJWWgk=,tag:NV063j53eJyhAke7eEMyNA==,type:str]
+            username: ENC[AES256_GCM,data:W+dVAIk=,iv:sevMMqjKp7Ojsmm+OlGvmXMrxrkoPisr/aOoy21HdwE=,tag:f4TIgzpzdLX4EuaDZFsSNA==,type:str]
+            password: ENC[AES256_GCM,data:2AyUBZE/FX7y,iv:YnKQEWkN08kG3ViYqP+rXTMlA4ZT5gdUco1yuVFaHh8=,tag:3KA6Tsvks+PyAqjzMiLEDg==,type:str]
             userKey: jenkins-admin-user
             passwordKey: jenkins-admin-password
             createSecret: false
             # existingSecret: ""
-    jenkinsUriPrefix: ENC[AES256_GCM,data:Jue+cgTmts+t6A==,iv:SPdIe0hHtGDZ1CmzvfmQmh28rvGijCh9sA15UKEjyGI=,tag:uqFr1Ph5kaJ2QdDn3oFVmw==,type:str]
+    jenkinsUriPrefix: ENC[AES256_GCM,data:9JYorLr8F56dHw==,iv:WwQnTZzehB08HylmbvboOhkjyDeDU+5knaE9YMMM4Zo=,tag:UCI1kC3OAFKCJtvSyBxI8w==,type:str]
     resources:
         requests:
-            cpu: 1000m
-            memory: 1024Mi
+            cpu: 700m
+            memory: 768Mi
         limits:
-            cpu: 2000m
-            memory: 4096Mi
+            cpu: 1000m
+            memory: 1096Mi
     # javaOpts: "-Djava.io.tmpdir=/var/jenkins_tmp"
     # JCasC:
     #   defaultConfig: false
@@ -96,14 +96,14 @@ sops:
         - recipient: age1awjh97kdxxhrqru5y5j99tpchv9avpfp9hfwu5jfqrgzp6dnpsqq8599ws
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB5eFFEWmM1Tm4wbmRMQnpi
-            ZHFIcU9wRVRzVVRsbmlkdktJS1NEck5lYUhBCjNNMWQva2ZwclRNMk5HS0lZQzVN
-            U0ZweXdjemVOVUQ4VTZ0ZngwREhKbGcKLS0tIGpzVlFPUGVoYzJkOUNJRnpmM2Q3
-            c0lOaWM2UHBwa0lqbXVhSHpwaGZHM1kKjXTbGTcJic4xl9C4PH6JbzzFehcEDuBW
-            /cF38vCgrCqZKri7buoadZJLNBmEc6FOl1aym8KxgNwaLuF2C/NKig==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBKNHdwWE5SeWx2RkR4Y1NU
+            Q2RYVkJsMGQ2MEc3V0hyTDVxdmJjVHJ6azBRCldYdjI1WkgrQ0VwTk10WGZNbzVB
+            aVB5U1REd3dmanRaZXJFMWh6elQzaWMKLS0tIGZQd2k1bUpuam5pMW5FZlBBa2xa
+            RTlkcHFWYjdpUEdtVWZBT3Y4emNHQjQKxu2mml+UYWYvR0pKkx/p1948rOGtW5/w
+            KRm4tQo8a79bb0kklgGJa6T6dTCRah2WHGWY4rfes68gRgEZNYU0Uw==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2024-05-22T07:19:44Z"
-    mac: ENC[AES256_GCM,data:/M3gkp57SWQGnf2snvKGZGHRd2C0bP+41SSHs2zQPPe5pJOu0fsncJcRB639u0HYoqIy43XjvW3IvjvB5lPHEQBATAtcXQuje6ObyYFB1pF5oOESI/30AIY6/FlDuQmyXQo99pdB7C/8m2OISYbZPmQ/jt2RmTsXXnX/D+h/EV0=,iv:eu9xfk+BRr1Y6NfbY0NObyQGv6Gr4sdY8Utt3Cnmnt0=,tag:KQTs8WwQYusglliM3fgFpw==,type:str]
+    lastmodified: "2024-05-22T08:44:23Z"
+    mac: ENC[AES256_GCM,data:hCfkT8C9wK0cPWwK96Lk52e1H5zAueLiQeUtPsPml6IbASAuGNrIThkV2g8HBtfv/y0m5S9rHuhA6AXKRF2HM7A8pY+qqp4ti2lWgKEMXpdIBrQjzF1/4uAkWmGJApPfl7SIDvZ5mVFJD7nzb+ixecoaLvUxu0yzFqesTe32rQM=,iv:6SmHRUjl9eXSfE1ysiGHXmkmo8MQCr1P+tfknj7iiJQ=,tag:rVME7sQ3Kq/lcsVEf8SfDg==,type:str]
     pgp: []
     encrypted_regex: ^(username|password|tag|jenkinsUriPrefix)$
     version: 3.8.1
