@@ -25,14 +25,3 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
----
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: GitRepository
-metadata:
-  name: my-secret
-  namespace: flux-system
-spec:
-  interval: 1m0s
-  ref:
-    branch: main
-  url: https://github.com/htgurukul/flux.git
